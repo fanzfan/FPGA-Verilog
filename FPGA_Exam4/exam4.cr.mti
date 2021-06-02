@@ -1,0 +1,64 @@
+{C:/intelFPGA_lite/Vela Projects/FPGA_Exam4/test_traffic.v} {1 {vlog -work work -stats=none {C:/intelFPGA_lite/Vela Projects/FPGA_Exam4/test_traffic.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module test_traffic
+
+Top level modules:
+	test_traffic
+
+} {} {}} {C:/intelFPGA_lite/Vela Projects/FPGA_Exam4/elevator.v} {1 {vlog -work work -stats=none {C:/intelFPGA_lite/Vela Projects/FPGA_Exam4/elevator.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module elevator
+
+Top level modules:
+	elevator
+
+} {} {}} {C:/intelFPGA_lite/Vela Projects/FPGA_Exam4/test_taillamp.v} {1 {vlog -work work -stats=none {C:/intelFPGA_lite/Vela Projects/FPGA_Exam4/test_taillamp.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module test_taillamp
+
+Top level modules:
+	test_taillamp
+
+} {} {}} {C:/intelFPGA_lite/Vela Projects/FPGA_Exam4/traffic.v} {1 {vlog -work work -stats=none {C:/intelFPGA_lite/Vela Projects/FPGA_Exam4/traffic.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module traffic
+
+Top level modules:
+	traffic
+
+} {} {}} {C:/intelFPGA_lite/Vela Projects/FPGA_Exam4/test_elevator2.v} {1 {vlog -work work -stats=none {C:/intelFPGA_lite/Vela Projects/FPGA_Exam4/test_elevator2.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module test_elevator2
+
+Top level modules:
+	test_elevator2
+
+} {} {}} {C:/intelFPGA_lite/Vela Projects/FPGA_Exam4/taillamp.v} {1 {vlog -work work -stats=none {C:/intelFPGA_lite/Vela Projects/FPGA_Exam4/taillamp.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module taillamp
+
+Top level modules:
+	taillamp
+
+} {} {}} {C:/intelFPGA_lite/Vela Projects/FPGA_Exam4/Ad_Counter.v} {1 {vlog -work work -stats=none {C:/intelFPGA_lite/Vela Projects/FPGA_Exam4/Ad_Counter.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module Ad_Counter
+
+Top level modules:
+	Ad_Counter
+
+} {} {}} {C:/intelFPGA_lite/Vela Projects/FPGA_Exam4/elevator2.v} {1 {vlog -work work -stats=none {C:/intelFPGA_lite/Vela Projects/FPGA_Exam4/elevator2.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module elevator2
+
+Top level modules:
+	elevator2
+
+} {} {}} {C:/intelFPGA_lite/Vela Projects/FPGA_Exam4/test_elevator.v} {1 {vlog -work work -stats=none {C:/intelFPGA_lite/Vela Projects/FPGA_Exam4/test_elevator.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module test_elevator
+
+Top level modules:
+	test_elevator
+
+} {} {}}

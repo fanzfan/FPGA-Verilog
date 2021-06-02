@@ -1,0 +1,92 @@
+{C:/intelFPGA_lite/Vela Projects/FPGA_Exam1/add1bit.v} {1 {vlog -work work -stats=none {C:/intelFPGA_lite/Vela Projects/FPGA_Exam1/add1bit.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module add1bit
+
+Top level modules:
+	add1bit
+
+} {} {}} {C:/intelFPGA_lite/Vela Projects/FPGA_Exam1/add4bit_8421.v} {1 {vlog -work work -stats=none {C:/intelFPGA_lite/Vela Projects/FPGA_Exam1/add4bit_8421.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module add4bit_8421
+
+Top level modules:
+	add4bit_8421
+
+} {} {}} {C:/intelFPGA_lite/Vela Projects/FPGA_Exam1/test_add16bit_8421.v} {1 {vlog -work work -stats=none {C:/intelFPGA_lite/Vela Projects/FPGA_Exam1/test_add16bit_8421.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module test_add16bit_8421
+
+Top level modules:
+	test_add16bit_8421
+
+} {} {}} {C:/intelFPGA_lite/Vela Projects/FPGA_Exam1/add16bit_fast.v} {1 {vlog -work work -stats=none {C:/intelFPGA_lite/Vela Projects/FPGA_Exam1/add16bit_fast.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module add16bit_fast
+
+Top level modules:
+	add16bit_fast
+
+} {} {}} {C:/intelFPGA_lite/Vela Projects/FPGA_Exam1/test_add16bit_2.v} {1 {vlog -work work -stats=none {C:/intelFPGA_lite/Vela Projects/FPGA_Exam1/test_add16bit_2.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module test_add16bit_2
+
+Top level modules:
+	test_add16bit_2
+
+} {} {}} {C:/intelFPGA_lite/Vela Projects/FPGA_Exam1/test_add1bit.v} {1 {vlog -work work -stats=none {C:/intelFPGA_lite/Vela Projects/FPGA_Exam1/test_add1bit.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module test_add1bit
+
+Top level modules:
+	test_add1bit
+
+} {} {}} {C:/intelFPGA_lite/Vela Projects/FPGA_Exam1/add16bit_2.v} {1 {vlog -work work -stats=none {C:/intelFPGA_lite/Vela Projects/FPGA_Exam1/add16bit_2.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module add16bit_2
+
+Top level modules:
+	add16bit_2
+
+} {} {}} {C:/intelFPGA_lite/Vela Projects/FPGA_Exam1/add4bit_fast.v} {1 {vlog -work work -stats=none {C:/intelFPGA_lite/Vela Projects/FPGA_Exam1/add4bit_fast.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module add4bit_fast
+
+Top level modules:
+	add4bit_fast
+
+} {} {}} {C:/intelFPGA_lite/Vela Projects/FPGA_Exam1/test_add16bit_fast.v} {1 {vlog -work work -stats=none {C:/intelFPGA_lite/Vela Projects/FPGA_Exam1/test_add16bit_fast.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module test_add16bit_fast
+
+Top level modules:
+	test_add16bit_fast
+
+} {} {}} {C:/intelFPGA_lite/Vela Projects/FPGA_Exam1/add4bit.v} {1 {vlog -work work -stats=none {C:/intelFPGA_lite/Vela Projects/FPGA_Exam1/add4bit.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module add4bit
+
+Top level modules:
+	add4bit
+
+} {} {}} {C:/intelFPGA_lite/Vela Projects/FPGA_Exam1/add16bit_8421.v} {1 {vlog -work work -stats=none {C:/intelFPGA_lite/Vela Projects/FPGA_Exam1/add16bit_8421.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module add16bit_8421
+
+Top level modules:
+	add16bit_8421
+
+} {} {}} {C:/intelFPGA_lite/Vela Projects/FPGA_Exam1/test_add16bit.v} {1 {vlog -work work -stats=none {C:/intelFPGA_lite/Vela Projects/FPGA_Exam1/test_add16bit.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module test_add16bit
+
+Top level modules:
+	test_add16bit
+
+} {} {}} {C:/intelFPGA_lite/Vela Projects/FPGA_Exam1/add16bit.v} {1 {vlog -work work -stats=none {C:/intelFPGA_lite/Vela Projects/FPGA_Exam1/add16bit.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module add16bit
+
+Top level modules:
+	add16bit
+
+} {} {}}

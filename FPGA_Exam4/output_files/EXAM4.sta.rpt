@@ -1,0 +1,483 @@
+Timing Analyzer report for EXAM4
+Wed May 05 16:58:31 2021
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Fmax Summary
+  6. Setup Summary
+  7. Hold Summary
+  8. Recovery Summary
+  9. Removal Summary
+ 10. Minimum Pulse Width Summary
+ 11. Setup: 'buttons[0]'
+ 12. Setup: 'CLK'
+ 13. Hold: 'buttons[0]'
+ 14. Hold: 'CLK'
+ 15. Setup Transfers
+ 16. Hold Transfers
+ 17. Report TCCS
+ 18. Report RSKM
+ 19. Unconstrained Paths Summary
+ 20. Clock Status Summary
+ 21. Unconstrained Input Ports
+ 22. Unconstrained Output Ports
+ 23. Unconstrained Input Ports
+ 24. Unconstrained Output Ports
+ 25. Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++-----------------------------------------------------------------------------+
+; Timing Analyzer Summary                                                     ;
++-----------------------+-----------------------------------------------------+
+; Quartus Prime Version ; Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Timing Analyzer       ; Legacy Timing Analyzer                              ;
+; Revision Name         ; EXAM4                                               ;
+; Device Family         ; MAX V                                               ;
+; Device Name           ; 5M80ZM68C4                                          ;
+; Timing Models         ; Final                                               ;
+; Delay Model           ; Slow Model                                          ;
+; Rise/Fall Delays      ; Unavailable                                         ;
++-----------------------+-----------------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                                 ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+----------------+
+; Clock Name ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets        ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+----------------+
+; buttons[0] ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { buttons[0] } ;
+; CLK        ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { CLK }        ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+----------------+
+
+
++--------------------------------------------------+
+; Fmax Summary                                     ;
++------------+-----------------+------------+------+
+; Fmax       ; Restricted Fmax ; Clock Name ; Note ;
++------------+-----------------+------------+------+
+; 54.32 MHz  ; 54.32 MHz       ; CLK        ;      ;
+; 112.64 MHz ; 112.64 MHz      ; buttons[0] ;      ;
++------------+-----------------+------------+------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++--------------------------------------+
+; Setup Summary                        ;
++------------+---------+---------------+
+; Clock      ; Slack   ; End Point TNS ;
++------------+---------+---------------+
+; buttons[0] ; -10.344 ; -18.136       ;
+; CLK        ; -10.248 ; -56.033       ;
++------------+---------+---------------+
+
+
++-------------------------------------+
+; Hold Summary                        ;
++------------+--------+---------------+
+; Clock      ; Slack  ; End Point TNS ;
++------------+--------+---------------+
+; buttons[0] ; -2.131 ; -2.131        ;
+; CLK        ; 2.874  ; 0.000         ;
++------------+--------+---------------+
+
+
+--------------------
+; Recovery Summary ;
+--------------------
+No paths to report.
+
+
+-------------------
+; Removal Summary ;
+-------------------
+No paths to report.
+
+
++-------------------------------------+
+; Minimum Pulse Width Summary         ;
++------------+--------+---------------+
+; Clock      ; Slack  ; End Point TNS ;
++------------+--------+---------------+
+; CLK        ; -2.289 ; -2.289        ;
+; buttons[0] ; -2.289 ; -2.289        ;
++------------+--------+---------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Setup: 'buttons[0]'                                                                                                ;
++---------+---------------------+--------------+--------------+-------------+--------------+------------+------------+
+; Slack   ; From Node           ; To Node      ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++---------+---------------------+--------------+--------------+-------------+--------------+------------+------------+
+; -10.344 ; Ad_Counter:add|Q[3] ; NextState[0] ; CLK          ; buttons[0]  ; 0.500        ; 7.739      ; 16.783     ;
+; -9.448  ; Ad_Counter:add|Q[2] ; NextState[0] ; CLK          ; buttons[0]  ; 0.500        ; 7.739      ; 15.887     ;
+; -9.061  ; Ad_Counter:add|Q[1] ; NextState[0] ; CLK          ; buttons[0]  ; 0.500        ; 7.739      ; 15.500     ;
+; -8.443  ; Ad_Counter:add|Q[0] ; NextState[0] ; CLK          ; buttons[0]  ; 0.500        ; 7.739      ; 14.882     ;
+; -7.792  ; Ad_Counter:add|Q[2] ; NextState[1] ; CLK          ; buttons[0]  ; 0.500        ; 7.761      ; 14.253     ;
+; -6.850  ; Ad_Counter:add|Q[1] ; NextState[1] ; CLK          ; buttons[0]  ; 0.500        ; 7.761      ; 13.311     ;
+; -6.689  ; Ad_Counter:add|Q[0] ; NextState[1] ; CLK          ; buttons[0]  ; 0.500        ; 7.761      ; 13.150     ;
+; -6.570  ; Ad_Counter:add|Q[3] ; NextState[1] ; CLK          ; buttons[0]  ; 0.500        ; 7.761      ; 13.031     ;
+; -4.436  ; CurrentState[1]     ; NextState[1] ; CLK          ; buttons[0]  ; 1.000        ; 7.761      ; 11.397     ;
+; -4.141  ; CurrentState[0]     ; NextState[1] ; CLK          ; buttons[0]  ; 1.000        ; 7.761      ; 11.102     ;
+; -4.136  ; CurrentState[2]     ; NextState[1] ; CLK          ; buttons[0]  ; 1.000        ; 7.761      ; 11.097     ;
+; -3.973  ; CurrentState[1]     ; NextState[0] ; CLK          ; buttons[0]  ; 1.000        ; 7.739      ; 10.912     ;
+; -3.939  ; buttons[0]          ; NextState[1] ; buttons[0]   ; buttons[0]  ; 0.500        ; 11.477     ; 14.116     ;
+; -3.678  ; CurrentState[0]     ; NextState[0] ; CLK          ; buttons[0]  ; 1.000        ; 7.739      ; 10.617     ;
+; -3.673  ; CurrentState[2]     ; NextState[0] ; CLK          ; buttons[0]  ; 1.000        ; 7.739      ; 10.612     ;
+; -3.476  ; buttons[0]          ; NextState[0] ; buttons[0]   ; buttons[0]  ; 0.500        ; 11.455     ; 13.631     ;
+; -3.439  ; buttons[0]          ; NextState[1] ; buttons[0]   ; buttons[0]  ; 1.000        ; 11.477     ; 14.116     ;
+; -2.976  ; buttons[0]          ; NextState[0] ; buttons[0]   ; buttons[0]  ; 1.000        ; 11.455     ; 13.631     ;
++---------+---------------------+--------------+--------------+-------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'CLK'                                                                                                              ;
++---------+---------------------+---------------------+--------------+-------------+--------------+------------+------------+
+; Slack   ; From Node           ; To Node             ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++---------+---------------------+---------------------+--------------+-------------+--------------+------------+------------+
+; -10.248 ; NextState[1]        ; CurrentState[1]     ; buttons[0]   ; CLK         ; 1.000        ; -7.761     ; 3.227      ;
+; -9.200  ; NextState[0]        ; CurrentState[0]     ; buttons[0]   ; CLK         ; 1.000        ; -7.739     ; 2.201      ;
+; -8.704  ; Ad_Counter:add|Q[3] ; CurrentState[0]     ; CLK          ; CLK         ; 0.500        ; 0.000      ; 8.944      ;
+; -8.080  ; Ad_Counter:add|Q[3] ; CurrentState[1]     ; CLK          ; CLK         ; 0.500        ; 0.000      ; 8.320      ;
+; -7.900  ; Ad_Counter:add|Q[1] ; Ad_Counter:add|Q[3] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 8.640      ;
+; -7.806  ; Ad_Counter:add|Q[0] ; CurrentState[0]     ; CLK          ; CLK         ; 0.500        ; 0.000      ; 8.046      ;
+; -7.542  ; Ad_Counter:add|Q[3] ; CurrentState[2]     ; CLK          ; CLK         ; 0.500        ; 0.000      ; 7.782      ;
+; -7.490  ; Ad_Counter:add|Q[3] ; Ad_Counter:add|Q[3] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 8.230      ;
+; -7.457  ; Ad_Counter:add|Q[2] ; Ad_Counter:add|Q[3] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 8.197      ;
+; -7.366  ; Ad_Counter:add|Q[1] ; CurrentState[0]     ; CLK          ; CLK         ; 0.500        ; 0.000      ; 7.606      ;
+; -7.323  ; CurrentState[1]     ; Ad_Counter:add|Q[3] ; CLK          ; CLK         ; 0.500        ; 0.000      ; 7.563      ;
+; -7.284  ; Ad_Counter:add|Q[1] ; Ad_Counter:add|Q[1] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 8.024      ;
+; -7.212  ; CurrentState[0]     ; Ad_Counter:add|Q[0] ; CLK          ; CLK         ; 0.500        ; 0.000      ; 7.452      ;
+; -7.182  ; Ad_Counter:add|Q[0] ; CurrentState[1]     ; CLK          ; CLK         ; 0.500        ; 0.000      ; 7.422      ;
+; -7.079  ; CurrentState[2]     ; Ad_Counter:add|Q[3] ; CLK          ; CLK         ; 0.500        ; 0.000      ; 7.319      ;
+; -7.007  ; Ad_Counter:add|Q[0] ; Ad_Counter:add|Q[3] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.747      ;
+; -6.923  ; Ad_Counter:add|Q[2] ; CurrentState[0]     ; CLK          ; CLK         ; 0.500        ; 0.000      ; 7.163      ;
+; -6.888  ; Ad_Counter:add|Q[3] ; Ad_Counter:add|Q[0] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.628      ;
+; -6.874  ; Ad_Counter:add|Q[3] ; Ad_Counter:add|Q[1] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.614      ;
+; -6.841  ; Ad_Counter:add|Q[2] ; Ad_Counter:add|Q[1] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.581      ;
+; -6.755  ; CurrentState[0]     ; Ad_Counter:add|Q[3] ; CLK          ; CLK         ; 0.500        ; 0.000      ; 6.995      ;
+; -6.742  ; Ad_Counter:add|Q[1] ; CurrentState[1]     ; CLK          ; CLK         ; 0.500        ; 0.000      ; 6.982      ;
+; -6.707  ; CurrentState[1]     ; Ad_Counter:add|Q[1] ; CLK          ; CLK         ; 0.500        ; 0.000      ; 6.947      ;
+; -6.659  ; Ad_Counter:add|Q[1] ; Ad_Counter:add|Q[0] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.399      ;
+; -6.647  ; Ad_Counter:add|Q[0] ; Ad_Counter:add|Q[2] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.387      ;
+; -6.644  ; Ad_Counter:add|Q[0] ; CurrentState[2]     ; CLK          ; CLK         ; 0.500        ; 0.000      ; 6.884      ;
+; -6.490  ; Ad_Counter:add|Q[1] ; Ad_Counter:add|Q[2] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.230      ;
+; -6.463  ; CurrentState[2]     ; Ad_Counter:add|Q[1] ; CLK          ; CLK         ; 0.500        ; 0.000      ; 6.703      ;
+; -6.409  ; CurrentState[1]     ; Ad_Counter:add|Q[0] ; CLK          ; CLK         ; 0.500        ; 0.000      ; 6.649      ;
+; -6.391  ; Ad_Counter:add|Q[0] ; Ad_Counter:add|Q[1] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.131      ;
+; -6.319  ; Ad_Counter:add|Q[0] ; Ad_Counter:add|Q[0] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.059      ;
+; -6.311  ; Ad_Counter:add|Q[3] ; Ad_Counter:add|Q[2] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.051      ;
+; -6.299  ; Ad_Counter:add|Q[2] ; CurrentState[1]     ; CLK          ; CLK         ; 0.500        ; 0.000      ; 6.539      ;
+; -6.216  ; Ad_Counter:add|Q[2] ; Ad_Counter:add|Q[0] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 6.956      ;
+; -6.153  ; Ad_Counter:add|Q[2] ; Ad_Counter:add|Q[2] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 6.893      ;
+; -6.139  ; CurrentState[0]     ; Ad_Counter:add|Q[1] ; CLK          ; CLK         ; 0.500        ; 0.000      ; 6.379      ;
+; -6.085  ; CurrentState[0]     ; Ad_Counter:add|Q[2] ; CLK          ; CLK         ; 0.500        ; 0.000      ; 6.325      ;
+; -6.048  ; Ad_Counter:add|Q[1] ; CurrentState[2]     ; CLK          ; CLK         ; 0.500        ; 0.000      ; 6.288      ;
+; -5.974  ; buttons[0]          ; CurrentState[0]     ; buttons[0]   ; CLK         ; 0.500        ; 3.716      ; 9.930      ;
+; -5.674  ; CurrentState[1]     ; Ad_Counter:add|Q[2] ; CLK          ; CLK         ; 0.500        ; 0.000      ; 5.914      ;
+; -5.605  ; Ad_Counter:add|Q[2] ; CurrentState[2]     ; CLK          ; CLK         ; 0.500        ; 0.000      ; 5.845      ;
+; -5.474  ; buttons[0]          ; CurrentState[0]     ; buttons[0]   ; CLK         ; 1.000        ; 3.716      ; 9.930      ;
+; -5.430  ; CurrentState[2]     ; Ad_Counter:add|Q[2] ; CLK          ; CLK         ; 0.500        ; 0.000      ; 5.670      ;
+; -5.350  ; buttons[0]          ; CurrentState[1]     ; buttons[0]   ; CLK         ; 0.500        ; 3.716      ; 9.306      ;
+; -5.192  ; CurrentState[2]     ; Ad_Counter:add|Q[0] ; CLK          ; CLK         ; 0.500        ; 0.000      ; 5.432      ;
+; -4.875  ; buttons[0]          ; CurrentState[2]     ; buttons[0]   ; CLK         ; 0.500        ; 3.716      ; 8.831      ;
+; -4.850  ; buttons[0]          ; CurrentState[1]     ; buttons[0]   ; CLK         ; 1.000        ; 3.716      ; 9.306      ;
+; -4.375  ; buttons[0]          ; CurrentState[2]     ; buttons[0]   ; CLK         ; 1.000        ; 3.716      ; 8.831      ;
++---------+---------------------+---------------------+--------------+-------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------+
+; Hold: 'buttons[0]'                                                                                                ;
++--------+---------------------+--------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node           ; To Node      ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+---------------------+--------------+--------------+-------------+--------------+------------+------------+
+; -2.131 ; Ad_Counter:add|Q[3] ; NextState[0] ; CLK          ; buttons[0]  ; -0.500       ; 7.739      ; 5.108      ;
+; 0.197  ; Ad_Counter:add|Q[3] ; NextState[1] ; CLK          ; buttons[0]  ; -0.500       ; 7.761      ; 7.458      ;
+; 0.820  ; CurrentState[2]     ; NextState[1] ; CLK          ; buttons[0]  ; 0.000        ; 7.761      ; 8.581      ;
+; 0.825  ; CurrentState[0]     ; NextState[1] ; CLK          ; buttons[0]  ; 0.000        ; 7.761      ; 8.586      ;
+; 1.048  ; buttons[0]          ; NextState[0] ; buttons[0]   ; buttons[0]  ; 0.000        ; 11.455     ; 12.503     ;
+; 1.120  ; CurrentState[1]     ; NextState[1] ; CLK          ; buttons[0]  ; 0.000        ; 7.761      ; 8.881      ;
+; 1.202  ; CurrentState[2]     ; NextState[0] ; CLK          ; buttons[0]  ; 0.000        ; 7.739      ; 8.941      ;
+; 1.207  ; CurrentState[0]     ; NextState[0] ; CLK          ; buttons[0]  ; 0.000        ; 7.739      ; 8.946      ;
+; 1.221  ; buttons[0]          ; NextState[1] ; buttons[0]   ; buttons[0]  ; 0.000        ; 11.477     ; 12.698     ;
+; 1.502  ; CurrentState[1]     ; NextState[0] ; CLK          ; buttons[0]  ; 0.000        ; 7.739      ; 9.241      ;
+; 1.548  ; buttons[0]          ; NextState[0] ; buttons[0]   ; buttons[0]  ; -0.500       ; 11.455     ; 12.503     ;
+; 1.721  ; buttons[0]          ; NextState[1] ; buttons[0]   ; buttons[0]  ; -0.500       ; 11.477     ; 12.698     ;
+; 2.079  ; Ad_Counter:add|Q[2] ; NextState[1] ; CLK          ; buttons[0]  ; -0.500       ; 7.761      ; 9.340      ;
+; 2.580  ; Ad_Counter:add|Q[0] ; NextState[1] ; CLK          ; buttons[0]  ; -0.500       ; 7.761      ; 9.841      ;
+; 3.250  ; Ad_Counter:add|Q[1] ; NextState[1] ; CLK          ; buttons[0]  ; -0.500       ; 7.761      ; 10.511     ;
+; 3.700  ; Ad_Counter:add|Q[2] ; NextState[0] ; CLK          ; buttons[0]  ; -0.500       ; 7.739      ; 10.939     ;
+; 4.240  ; Ad_Counter:add|Q[1] ; NextState[0] ; CLK          ; buttons[0]  ; -0.500       ; 7.739      ; 11.479     ;
+; 4.310  ; Ad_Counter:add|Q[0] ; NextState[0] ; CLK          ; buttons[0]  ; -0.500       ; 7.739      ; 11.549     ;
++--------+---------------------+--------------+--------------+-------------+--------------+------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'CLK'                                                                                                              ;
++--------+---------------------+---------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node           ; To Node             ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+---------------------+---------------------+--------------+-------------+--------------+------------+------------+
+; 2.874  ; Ad_Counter:add|Q[3] ; Ad_Counter:add|Q[3] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 2.948      ;
+; 3.019  ; Ad_Counter:add|Q[0] ; Ad_Counter:add|Q[0] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 3.093      ;
+; 3.167  ; buttons[0]          ; CurrentState[2]     ; buttons[0]   ; CLK         ; 0.000        ; 3.716      ; 6.957      ;
+; 3.667  ; buttons[0]          ; CurrentState[2]     ; buttons[0]   ; CLK         ; -0.500       ; 3.716      ; 6.957      ;
+; 3.719  ; buttons[0]          ; CurrentState[1]     ; buttons[0]   ; CLK         ; 0.000        ; 3.716      ; 7.509      ;
+; 4.219  ; buttons[0]          ; CurrentState[1]     ; buttons[0]   ; CLK         ; -0.500       ; 3.716      ; 7.509      ;
+; 4.343  ; buttons[0]          ; CurrentState[0]     ; buttons[0]   ; CLK         ; 0.000        ; 3.716      ; 8.133      ;
+; 4.843  ; buttons[0]          ; CurrentState[0]     ; buttons[0]   ; CLK         ; -0.500       ; 3.716      ; 8.133      ;
+; 5.081  ; Ad_Counter:add|Q[1] ; Ad_Counter:add|Q[1] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 5.155      ;
+; 5.314  ; Ad_Counter:add|Q[3] ; CurrentState[2]     ; CLK          ; CLK         ; -0.500       ; 0.000      ; 4.888      ;
+; 5.340  ; CurrentState[0]     ; Ad_Counter:add|Q[1] ; CLK          ; CLK         ; -0.500       ; 0.000      ; 4.914      ;
+; 5.480  ; Ad_Counter:add|Q[2] ; CurrentState[2]     ; CLK          ; CLK         ; -0.500       ; 0.000      ; 5.054      ;
+; 5.589  ; CurrentState[0]     ; Ad_Counter:add|Q[2] ; CLK          ; CLK         ; -0.500       ; 0.000      ; 5.163      ;
+; 5.664  ; Ad_Counter:add|Q[1] ; CurrentState[2]     ; CLK          ; CLK         ; -0.500       ; 0.000      ; 5.238      ;
+; 5.682  ; Ad_Counter:add|Q[0] ; CurrentState[2]     ; CLK          ; CLK         ; -0.500       ; 0.000      ; 5.256      ;
+; 5.751  ; Ad_Counter:add|Q[2] ; Ad_Counter:add|Q[0] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 5.825      ;
+; 5.858  ; CurrentState[2]     ; Ad_Counter:add|Q[0] ; CLK          ; CLK         ; -0.500       ; 0.000      ; 5.432      ;
+; 5.866  ; Ad_Counter:add|Q[3] ; CurrentState[1]     ; CLK          ; CLK         ; -0.500       ; 0.000      ; 5.440      ;
+; 6.016  ; CurrentState[0]     ; Ad_Counter:add|Q[3] ; CLK          ; CLK         ; -0.500       ; 0.000      ; 5.590      ;
+; 6.024  ; Ad_Counter:add|Q[0] ; Ad_Counter:add|Q[2] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 6.098      ;
+; 6.032  ; Ad_Counter:add|Q[2] ; CurrentState[1]     ; CLK          ; CLK         ; -0.500       ; 0.000      ; 5.606      ;
+; 6.096  ; CurrentState[2]     ; Ad_Counter:add|Q[2] ; CLK          ; CLK         ; -0.500       ; 0.000      ; 5.670      ;
+; 6.163  ; Ad_Counter:add|Q[2] ; Ad_Counter:add|Q[2] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 6.237      ;
+; 6.216  ; Ad_Counter:add|Q[1] ; CurrentState[1]     ; CLK          ; CLK         ; -0.500       ; 0.000      ; 5.790      ;
+; 6.234  ; Ad_Counter:add|Q[0] ; CurrentState[1]     ; CLK          ; CLK         ; -0.500       ; 0.000      ; 5.808      ;
+; 6.340  ; CurrentState[1]     ; Ad_Counter:add|Q[2] ; CLK          ; CLK         ; -0.500       ; 0.000      ; 5.914      ;
+; 6.386  ; Ad_Counter:add|Q[1] ; Ad_Counter:add|Q[2] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 6.460      ;
+; 6.431  ; Ad_Counter:add|Q[2] ; Ad_Counter:add|Q[1] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 6.505      ;
+; 6.490  ; Ad_Counter:add|Q[3] ; CurrentState[0]     ; CLK          ; CLK         ; -0.500       ; 0.000      ; 6.064      ;
+; 6.507  ; Ad_Counter:add|Q[3] ; Ad_Counter:add|Q[2] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 6.581      ;
+; 6.565  ; Ad_Counter:add|Q[3] ; Ad_Counter:add|Q[0] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 6.639      ;
+; 6.648  ; Ad_Counter:add|Q[0] ; Ad_Counter:add|Q[1] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 6.722      ;
+; 6.656  ; Ad_Counter:add|Q[2] ; CurrentState[0]     ; CLK          ; CLK         ; -0.500       ; 0.000      ; 6.230      ;
+; 6.661  ; Ad_Counter:add|Q[1] ; Ad_Counter:add|Q[3] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 6.735      ;
+; 6.726  ; CurrentState[0]     ; Ad_Counter:add|Q[0] ; CLK          ; CLK         ; -0.500       ; 0.000      ; 6.300      ;
+; 6.744  ; Ad_Counter:add|Q[1] ; Ad_Counter:add|Q[0] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 6.818      ;
+; 6.840  ; Ad_Counter:add|Q[1] ; CurrentState[0]     ; CLK          ; CLK         ; -0.500       ; 0.000      ; 6.414      ;
+; 6.858  ; Ad_Counter:add|Q[0] ; CurrentState[0]     ; CLK          ; CLK         ; -0.500       ; 0.000      ; 6.432      ;
+; 7.020  ; Ad_Counter:add|Q[2] ; Ad_Counter:add|Q[3] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 7.094      ;
+; 7.075  ; CurrentState[1]     ; Ad_Counter:add|Q[0] ; CLK          ; CLK         ; -0.500       ; 0.000      ; 6.649      ;
+; 7.129  ; CurrentState[2]     ; Ad_Counter:add|Q[1] ; CLK          ; CLK         ; -0.500       ; 0.000      ; 6.703      ;
+; 7.245  ; Ad_Counter:add|Q[3] ; Ad_Counter:add|Q[1] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 7.319      ;
+; 7.373  ; CurrentState[1]     ; Ad_Counter:add|Q[1] ; CLK          ; CLK         ; -0.500       ; 0.000      ; 6.947      ;
+; 7.550  ; Ad_Counter:add|Q[0] ; Ad_Counter:add|Q[3] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 7.624      ;
+; 7.745  ; CurrentState[2]     ; Ad_Counter:add|Q[3] ; CLK          ; CLK         ; -0.500       ; 0.000      ; 7.319      ;
+; 7.989  ; CurrentState[1]     ; Ad_Counter:add|Q[3] ; CLK          ; CLK         ; -0.500       ; 0.000      ; 7.563      ;
+; 9.866  ; NextState[0]        ; CurrentState[0]     ; buttons[0]   ; CLK         ; 0.000        ; -7.739     ; 2.201      ;
+; 10.914 ; NextState[1]        ; CurrentState[1]     ; buttons[0]   ; CLK         ; 0.000        ; -7.761     ; 3.227      ;
++--------+---------------------+---------------------+--------------+-------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------+
+; Setup Transfers                                                     ;
++------------+------------+----------+----------+----------+----------+
+; From Clock ; To Clock   ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+------------+----------+----------+----------+----------+
+; buttons[0] ; buttons[0] ; 8        ; 8        ; 0        ; 0        ;
+; CLK        ; buttons[0] ; 48       ; 98       ; 0        ; 0        ;
+; buttons[0] ; CLK        ; 8        ; 6        ; 0        ; 0        ;
+; CLK        ; CLK        ; 0        ; 36       ; 25       ; 46       ;
++------------+------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++---------------------------------------------------------------------+
+; Hold Transfers                                                      ;
++------------+------------+----------+----------+----------+----------+
+; From Clock ; To Clock   ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+------------+----------+----------+----------+----------+
+; buttons[0] ; buttons[0] ; 8        ; 8        ; 0        ; 0        ;
+; CLK        ; buttons[0] ; 48       ; 98       ; 0        ; 0        ;
+; buttons[0] ; CLK        ; 8        ; 6        ; 0        ; 0        ;
+; CLK        ; CLK        ; 0        ; 36       ; 25       ; 46       ;
++------------+------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No non-DPA dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths Summary                    ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 10    ; 10   ;
+; Unconstrained Input Port Paths  ; 49    ; 49   ;
+; Unconstrained Output Ports      ; 4     ; 4    ;
+; Unconstrained Output Port Paths ; 4     ; 4    ;
++---------------------------------+-------+------+
+
+
++----------------------------------------------+
+; Clock Status Summary                         ;
++------------+------------+------+-------------+
+; Target     ; Clock      ; Type ; Status      ;
++------------+------------+------+-------------+
+; CLK        ; CLK        ; Base ; Constrained ;
+; buttons[0] ; buttons[0] ; Base ; Constrained ;
++------------+------------+------+-------------+
+
+
++---------------------------------------------------------------------------------------------------+
+; Unconstrained Input Ports                                                                         ;
++------------+--------------------------------------------------------------------------------------+
+; Input Port ; Comment                                                                              ;
++------------+--------------------------------------------------------------------------------------+
+; Reset      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; buttons[1] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; buttons[2] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; buttons[3] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; buttons[4] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; buttons[5] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; buttons[6] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; buttons[7] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; buttons[8] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; buttons[9] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
++------------+--------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Unconstrained Output Ports                                                                          ;
++-------------+---------------------------------------------------------------------------------------+
+; Output Port ; Comment                                                                               ;
++-------------+---------------------------------------------------------------------------------------+
+; Layer[0]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Layer[1]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Layer[2]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Layer[3]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
++-------------+---------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------+
+; Unconstrained Input Ports                                                                         ;
++------------+--------------------------------------------------------------------------------------+
+; Input Port ; Comment                                                                              ;
++------------+--------------------------------------------------------------------------------------+
+; Reset      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; buttons[1] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; buttons[2] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; buttons[3] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; buttons[4] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; buttons[5] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; buttons[6] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; buttons[7] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; buttons[8] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; buttons[9] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
++------------+--------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Unconstrained Output Ports                                                                          ;
++-------------+---------------------------------------------------------------------------------------+
+; Output Port ; Comment                                                                               ;
++-------------+---------------------------------------------------------------------------------------+
+; Layer[0]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Layer[1]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Layer[2]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Layer[3]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
++-------------+---------------------------------------------------------------------------------------+
+
+
++--------------------------+
+; Timing Analyzer Messages ;
++--------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Timing Analyzer
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+    Info: Processing started: Wed May 05 16:58:29 2021
+Info: Command: quartus_sta EXAM4 -c EXAM4
+Info: qsta_default_script.tcl version: #1
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (334003): Started post-fitting delay annotation
+Info (334004): Delay annotation completed successfully
+Warning (335093): The Timing Analyzer is analyzing 2 combinational loops as latches. For more details, run the Check Timing command in the Timing Analyzer or view the "User-Specified and Inferred Latches" table in the Analysis & Synthesis report.
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'EXAM4.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332105): Deriving Clocks
+    Info (332105): create_clock -period 1.000 -name CLK CLK
+    Info (332105): create_clock -period 1.000 -name buttons[0] buttons[0]
+Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info: Can't run Report Timing Closure Recommendations. The current device family is not supported.
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case setup slack is -10.344
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):   -10.344             -18.136 buttons[0] 
+    Info (332119):   -10.248             -56.033 CLK 
+Info (332146): Worst-case hold slack is -2.131
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -2.131              -2.131 buttons[0] 
+    Info (332119):     2.874               0.000 CLK 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -2.289
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -2.289              -2.289 CLK 
+    Info (332119):    -2.289              -2.289 buttons[0] 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus Prime Timing Analyzer was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 4650 megabytes
+    Info: Processing ended: Wed May 05 16:58:31 2021
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
+
+

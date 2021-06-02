@@ -1,0 +1,8 @@
+module add1bit(A,B,Ci,Y,Co);
+    input A, B, Ci;
+    output Y, Co;
+    wire Y, Co;
+    assign Y = A ^ B ^ Ci;
+    assign Co = A & B | Ci & (A ^ B);
+      
+endmodule

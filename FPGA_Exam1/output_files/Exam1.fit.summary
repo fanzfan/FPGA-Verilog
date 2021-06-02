@@ -1,0 +1,11 @@
+Fitter Status : Successful - Wed Mar 31 08:44:06 2021
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : Exam1
+Top-level Entity Name : add16bit
+Family : MAX V
+Device : 5M80ZT100C4
+Timing Models : Final
+Total logic elements : 18 / 80 ( 23 % )
+Total pins : 50 / 79 ( 63 % )
+Total virtual pins : 0
+UFM blocks : 0 / 1 ( 0 % )

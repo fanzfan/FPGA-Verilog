@@ -1,0 +1,22 @@
+# Compile of Decoder38_74LS138.v was successful.
+# Compile of Encoder83_74LS148.v failed with 1 errors.
+# Compile of test_Decoder38_74LS138.v was successful.
+# Compile of test_Encoder83_74LS148.v was successful.
+# 4 compiles, 1 failed with 1 error.
+# Compile of Decoder38_74LS138.v was successful.
+# Compile of Encoder83_74LS148.v was successful.
+# Compile of test_Decoder38_74LS138.v was successful.
+# Compile of test_Encoder83_74LS148.v was successful.
+# 4 compiles, 0 failed with no errors.
+vsim -gui work.test_Encoder83_74LS148
+# vsim -gui work.test_Encoder83_74LS148 
+# Start time: 09:36:38 on Mar 31,2021
+# Loading work.test_Encoder83_74LS148
+# Loading work.Encoder83_74LS148
+add wave -position insertpoint sim:/test_Encoder83_74LS148/*
+run 15ns
+# ** Note: $stop    : C:/intelFPGA_lite/Vela Projects/FPGA_Exam2/test_Encoder83_74LS148.v(22)
+#    Time: 10 ns  Iteration: 0  Instance: /test_Encoder83_74LS148
+# Break in Module test_Encoder83_74LS148 at C:/intelFPGA_lite/Vela Projects/FPGA_Exam2/test_Encoder83_74LS148.v line 22
+# End time: 09:37:34 on Mar 31,2021, Elapsed time: 0:00:56
+# Errors: 0, Warnings: 3

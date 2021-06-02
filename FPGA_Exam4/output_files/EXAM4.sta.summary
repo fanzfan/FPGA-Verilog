@@ -1,0 +1,29 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Setup 'buttons[0]'
+Slack : -10.344
+TNS   : -18.136
+
+Type  : Setup 'CLK'
+Slack : -10.248
+TNS   : -56.033
+
+Type  : Hold 'buttons[0]'
+Slack : -2.131
+TNS   : -2.131
+
+Type  : Hold 'CLK'
+Slack : 2.874
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'CLK'
+Slack : -2.289
+TNS   : -2.289
+
+Type  : Minimum Pulse Width 'buttons[0]'
+Slack : -2.289
+TNS   : -2.289
+
+------------------------------------------------------------

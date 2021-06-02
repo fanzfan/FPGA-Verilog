@@ -1,0 +1,250 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA_lite/Vela Projects/FPGA_Exam2
+vAsyncCounter_108
+Z0 !s110 1618638313
+!i10b 1
+!s100 dB:7P>0>aTjQBGVJDao4k1
+Ij2O5aRZ^>L7f_aUe?i_NF0
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/intelFPGA_lite/Vela Projects/FPGA_Exam3
+w1618637389
+8C:/intelFPGA_lite/Vela Projects/FPGA_Exam3/AsyncCounter_108.v
+FC:/intelFPGA_lite/Vela Projects/FPGA_Exam3/AsyncCounter_108.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1618638313.000000
+!s107 C:/intelFPGA_lite/Vela Projects/FPGA_Exam3/AsyncCounter_108.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/intelFPGA_lite/Vela Projects/FPGA_Exam3/AsyncCounter_108.v|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+n@async@counter_108
+vAsyncCounter_8bit
+Z7 !s110 1620200137
+!i10b 1
+!s100 HFJD=4@5B:VCzz5oP8XAg0
+I1oSa]iWH>FZi5KhF2acff1
+R1
+R2
+w1618660367
+8C:/intelFPGA_lite/Vela Projects/FPGA_Exam3/AsyncCounter_8bit.v
+FC:/intelFPGA_lite/Vela Projects/FPGA_Exam3/AsyncCounter_8bit.v
+L0 4
+R3
+r1
+!s85 0
+31
+!s108 1620200136.000000
+!s107 C:/intelFPGA_lite/Vela Projects/FPGA_Exam3/AsyncCounter_8bit.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/intelFPGA_lite/Vela Projects/FPGA_Exam3/AsyncCounter_8bit.v|
+!i113 1
+R5
+R6
+n@async@counter_8bit
+vm
+Z8 !s110 1620200138
+!i10b 1
+!s100 Ad^ZQ>7`zW1^e;emNhUS`1
+I0jBBZfG<`^085Y>]YdDag1
+R1
+R2
+w1618639142
+8C:/intelFPGA_lite/Vela Projects/FPGA_Exam3/m.v
+FC:/intelFPGA_lite/Vela Projects/FPGA_Exam3/m.v
+L0 2
+R3
+r1
+!s85 0
+31
+Z9 !s108 1620200138.000000
+!s107 C:/intelFPGA_lite/Vela Projects/FPGA_Exam3/m.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/intelFPGA_lite/Vela Projects/FPGA_Exam3/m.v|
+!i113 1
+R5
+R6
+vSyncCounter_108
+Z10 !s110 1620200139
+!i10b 1
+!s100 6S?:en]gT2M_X;X5L?6_z1
+IZnJJj`XGZ=N^`9V=IfbYd3
+R1
+R2
+w1620200117
+8C:/intelFPGA_lite/Vela Projects/FPGA_Exam3/SyncCounter_108.v
+FC:/intelFPGA_lite/Vela Projects/FPGA_Exam3/SyncCounter_108.v
+L0 4
+R3
+r1
+!s85 0
+31
+Z11 !s108 1620200139.000000
+!s107 C:/intelFPGA_lite/Vela Projects/FPGA_Exam3/SyncCounter_108.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/intelFPGA_lite/Vela Projects/FPGA_Exam3/SyncCounter_108.v|
+!i113 1
+R5
+R6
+n@sync@counter_108
+vSyncCounter_8bit
+R7
+!i10b 1
+!s100 S0Iih;[Y9Bh;T2n6AS[JC3
+I0F`b9DVcTEV@2GZ@FiQ[N1
+R1
+R2
+w1618660366
+8C:/intelFPGA_lite/Vela Projects/FPGA_Exam3/SyncCounter_8bit.v
+FC:/intelFPGA_lite/Vela Projects/FPGA_Exam3/SyncCounter_8bit.v
+L0 4
+R3
+r1
+!s85 0
+31
+Z12 !s108 1620200137.000000
+!s107 C:/intelFPGA_lite/Vela Projects/FPGA_Exam3/SyncCounter_8bit.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/intelFPGA_lite/Vela Projects/FPGA_Exam3/SyncCounter_8bit.v|
+!i113 1
+R5
+R6
+n@sync@counter_8bit
+vT_FlipFlop
+R7
+!i10b 1
+!s100 6Jk4OmDP=G3<MN_co4:R52
+I]Bf]TBGK@[kk6gTd>U<z00
+R1
+R2
+w1618660120
+8C:/intelFPGA_lite/Vela Projects/FPGA_Exam3/T_FlipFlop.v
+FC:/intelFPGA_lite/Vela Projects/FPGA_Exam3/T_FlipFlop.v
+L0 3
+R3
+r1
+!s85 0
+31
+R12
+!s107 C:/intelFPGA_lite/Vela Projects/FPGA_Exam3/T_FlipFlop.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/intelFPGA_lite/Vela Projects/FPGA_Exam3/T_FlipFlop.v|
+!i113 1
+R5
+R6
+n@t_@flip@flop
+vtest_AsyncCounter_108
+R0
+!i10b 1
+!s100 >^2PmALM^I4z]]hF=iZPf2
+IiAZgN:;;D<jNazj7TGVKQ3
+R1
+R2
+w1618636745
+8C:/intelFPGA_lite/Vela Projects/FPGA_Exam3/test_AsyncCounter_108.v
+FC:/intelFPGA_lite/Vela Projects/FPGA_Exam3/test_AsyncCounter_108.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/intelFPGA_lite/Vela Projects/FPGA_Exam3/test_AsyncCounter_108.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/intelFPGA_lite/Vela Projects/FPGA_Exam3/test_AsyncCounter_108.v|
+!i113 1
+R5
+R6
+ntest_@async@counter_108
+vtest_AsyncCounter_8bit
+R7
+!i10b 1
+!s100 MooiJlo5DbcmfEQKJG8243
+IfCfQjV6XoESZ>n<c[InoA1
+R1
+R2
+w1618473979
+8C:/intelFPGA_lite/Vela Projects/FPGA_Exam3/test_AsyncCounter_8bit.v
+FC:/intelFPGA_lite/Vela Projects/FPGA_Exam3/test_AsyncCounter_8bit.v
+L0 2
+R3
+r1
+!s85 0
+31
+R12
+!s107 C:/intelFPGA_lite/Vela Projects/FPGA_Exam3/test_AsyncCounter_8bit.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/intelFPGA_lite/Vela Projects/FPGA_Exam3/test_AsyncCounter_8bit.v|
+!i113 1
+R5
+R6
+ntest_@async@counter_8bit
+vtest_m
+R8
+!i10b 1
+!s100 oH6TU:;OdeWJe?OEBJEl>2
+Iff42k60[<jO?GPPg46DhJ0
+R1
+R2
+w1618638096
+8C:/intelFPGA_lite/Vela Projects/FPGA_Exam3/test_m.v
+FC:/intelFPGA_lite/Vela Projects/FPGA_Exam3/test_m.v
+L0 2
+R3
+r1
+!s85 0
+31
+R9
+!s107 C:/intelFPGA_lite/Vela Projects/FPGA_Exam3/test_m.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/intelFPGA_lite/Vela Projects/FPGA_Exam3/test_m.v|
+!i113 1
+R5
+R6
+vtest_SyncCounter_108
+R10
+!i10b 1
+!s100 CieaaoZ;_oDV8GXzmabfb3
+IVLNNBToYWFdj0m6Z5JRiX1
+R1
+R2
+w1618821232
+8C:/intelFPGA_lite/Vela Projects/FPGA_Exam3/test_SyncCounter_108.v
+FC:/intelFPGA_lite/Vela Projects/FPGA_Exam3/test_SyncCounter_108.v
+L0 2
+R3
+r1
+!s85 0
+31
+R11
+!s107 C:/intelFPGA_lite/Vela Projects/FPGA_Exam3/test_SyncCounter_108.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/intelFPGA_lite/Vela Projects/FPGA_Exam3/test_SyncCounter_108.v|
+!i113 1
+R5
+R6
+ntest_@sync@counter_108
+vtest_SyncCounter_8bit
+R7
+!i10b 1
+!s100 aRb@z79Az1R:N;<Vzn=hC3
+I?cRIzO;?QX@IzWfNDkF7b3
+R1
+R2
+w1618473992
+8C:/intelFPGA_lite/Vela Projects/FPGA_Exam3/test_SyncCounter_8bit.v
+FC:/intelFPGA_lite/Vela Projects/FPGA_Exam3/test_SyncCounter_8bit.v
+L0 2
+R3
+r1
+!s85 0
+31
+R12
+!s107 C:/intelFPGA_lite/Vela Projects/FPGA_Exam3/test_SyncCounter_8bit.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/intelFPGA_lite/Vela Projects/FPGA_Exam3/test_SyncCounter_8bit.v|
+!i113 1
+R5
+R6
+ntest_@sync@counter_8bit

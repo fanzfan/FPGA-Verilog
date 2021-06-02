@@ -1,0 +1,50 @@
+{C:/intelFPGA_lite/Vela Projects/FPGA_Exam3/test_AsyncCounter_8bit.v} {1 {vlog -work work -stats=none {C:/intelFPGA_lite/Vela Projects/FPGA_Exam3/test_AsyncCounter_8bit.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module test_AsyncCounter_8bit
+
+Top level modules:
+	test_AsyncCounter_8bit
+
+} {} {}} {C:/intelFPGA_lite/Vela Projects/FPGA_Exam3/SyncCounter_8bit.v} {1 {vlog -work work -stats=none {C:/intelFPGA_lite/Vela Projects/FPGA_Exam3/SyncCounter_8bit.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module SyncCounter_8bit
+
+Top level modules:
+	SyncCounter_8bit
+
+} {} {}} {C:/intelFPGA_lite/Vela Projects/FPGA_Exam3/T_FlipFlop.v} {1 {vlog -work work -stats=none {C:/intelFPGA_lite/Vela Projects/FPGA_Exam3/T_FlipFlop.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module T_FlipFlop
+
+Top level modules:
+	T_FlipFlop
+
+} {} {}} {C:/intelFPGA_lite/Vela Projects/FPGA_Exam3/test_SyncCounter_108.v} {1 {vlog -work work -stats=none {C:/intelFPGA_lite/Vela Projects/FPGA_Exam3/test_SyncCounter_108.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module test_SyncCounter_108
+
+Top level modules:
+	test_SyncCounter_108
+
+} {} {}} {C:/intelFPGA_lite/Vela Projects/FPGA_Exam3/test_m.v} {1 {vlog -work work -stats=none {C:/intelFPGA_lite/Vela Projects/FPGA_Exam3/test_m.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module test_m
+
+Top level modules:
+	test_m
+
+} {} {}} {C:/intelFPGA_lite/Vela Projects/FPGA_Exam3/AsyncCounter_8bit.v} {1 {vlog -work work -stats=none {C:/intelFPGA_lite/Vela Projects/FPGA_Exam3/AsyncCounter_8bit.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module AsyncCounter_8bit
+
+Top level modules:
+	AsyncCounter_8bit
+
+} {} {}} {C:/intelFPGA_lite/Vela Projects/FPGA_Exam3/test_SyncCounter_8bit.v} {1 {vlog -work work -stats=none {C:/intelFPGA_lite/Vela Projects/FPGA_Exam3/test_SyncCounter_8bit.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module test_SyncCounter_8bit
+
+Top level modules:
+	test_SyncCounter_8bit
+
+} {} {}}

@@ -1,0 +1,11 @@
+Fitter Status : Successful - Tue Apr 06 22:10:13 2021
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : FPGA_Exam2
+Top-level Entity Name : Encoder83_74LS148
+Family : MAX V
+Device : 5M40ZE64C4
+Timing Models : Final
+Total logic elements : 11 / 40 ( 28 % )
+Total pins : 14 / 54 ( 26 % )
+Total virtual pins : 0
+UFM blocks : 0 / 1 ( 0 % )

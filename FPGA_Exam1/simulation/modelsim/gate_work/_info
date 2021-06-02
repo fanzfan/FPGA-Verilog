@@ -1,0 +1,59 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/intelFPGA_lite/Vela Projects/FPGA_Exam1/simulation/modelsim
+vadd1bit
+!s110 1616921255
+!i10b 1
+!s100 X9C_lY4@NPlg1S9;LN0S]2
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I182EGboFmKPh7BEDdAWUB3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1616920319
+8Exam1.vo
+FExam1.vo
+!i122 0
+L0 32 163
+Z3 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1616921255.000000
+!s107 Exam1.vo|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|Exam1.vo|
+!i113 1
+Z4 o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+.
+Z5 tCvgOpt 0
+vtest_add1bit
+!s110 1616921256
+!i10b 1
+!s100 kdP4^9BS8bNF_iUBlVXXF1
+R1
+Ie=UYAzlicR_^XzL4BX=3m0
+R2
+R0
+w1616921230
+8C:/intelFPGA_lite/Vela Projects/FPGA_Exam1/simulation/modelsim/add1bit.vt
+FC:/intelFPGA_lite/Vela Projects/FPGA_Exam1/simulation/modelsim/add1bit.vt
+!i122 1
+L0 2 17
+R3
+r1
+!s85 0
+31
+!s108 1616921256.000000
+!s107 C:/intelFPGA_lite/Vela Projects/FPGA_Exam1/simulation/modelsim/add1bit.vt|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/Vela Projects/FPGA_Exam1/simulation/modelsim|C:/intelFPGA_lite/Vela Projects/FPGA_Exam1/simulation/modelsim/add1bit.vt|
+!i113 1
+R4
+!s92 -vlog01compat -work work {+incdir+C:/intelFPGA_lite/Vela Projects/FPGA_Exam1/simulation/modelsim}
+R5

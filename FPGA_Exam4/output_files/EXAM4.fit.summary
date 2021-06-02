@@ -1,0 +1,11 @@
+Fitter Status : Successful - Wed May 05 16:58:26 2021
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : EXAM4
+Top-level Entity Name : elevator2
+Family : MAX V
+Device : 5M80ZM68C4
+Timing Models : Final
+Total logic elements : 71 / 80 ( 89 % )
+Total pins : 16 / 52 ( 31 % )
+Total virtual pins : 0
+UFM blocks : 0 / 1 ( 0 % )

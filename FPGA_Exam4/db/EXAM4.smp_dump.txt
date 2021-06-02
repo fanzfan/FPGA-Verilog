@@ -1,0 +1,7 @@
+
+State Machine - |traffic|CurrentState
+Name CurrentState.S2 CurrentState.S3 CurrentState.S1 CurrentState.S0 
+CurrentState.S0 0 0 0 0 
+CurrentState.S1 0 0 1 1 
+CurrentState.S3 0 1 0 1 
+CurrentState.S2 1 0 0 1 

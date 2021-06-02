@@ -1,0 +1,2 @@
+Warning (10268): Verilog HDL information at taillamp.v(17): always construct contains both blocking and non-blocking assignments File: C:/intelFPGA_lite/Vela Projects/FPGA_Exam4/taillamp.v Line: 17
+Warning (10268): Verilog HDL information at elevator.v(56): always construct contains both blocking and non-blocking assignments File: C:/intelFPGA_lite/Vela Projects/FPGA_Exam4/elevator.v Line: 56

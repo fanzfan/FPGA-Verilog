@@ -1,0 +1,29 @@
+{C:/intelFPGA_lite/Vela Projects/FPGA_Exam2/test_Encoder83_74LS148.v} {1 {vlog -work work -stats=none {C:/intelFPGA_lite/Vela Projects/FPGA_Exam2/test_Encoder83_74LS148.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module test_Encoder83_74LS148
+
+Top level modules:
+	test_Encoder83_74LS148
+
+} {} {}} {C:/intelFPGA_lite/Vela Projects/FPGA_Exam2/test_Decoder38_74LS138.v} {1 {vlog -work work -stats=none {C:/intelFPGA_lite/Vela Projects/FPGA_Exam2/test_Decoder38_74LS138.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module test_Decoder38_74LS138
+
+Top level modules:
+	test_Decoder38_74LS138
+
+} {} {}} {C:/intelFPGA_lite/Vela Projects/FPGA_Exam2/Encoder83_74LS148.v} {1 {vlog -work work -stats=none {C:/intelFPGA_lite/Vela Projects/FPGA_Exam2/Encoder83_74LS148.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module Encoder83_74LS148
+
+Top level modules:
+	Encoder83_74LS148
+
+} {} {}} {C:/intelFPGA_lite/Vela Projects/FPGA_Exam2/Decoder38_74LS138.v} {1 {vlog -work work -stats=none {C:/intelFPGA_lite/Vela Projects/FPGA_Exam2/Decoder38_74LS138.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module Decoder38_74LS138
+
+Top level modules:
+	Decoder38_74LS138
+
+} {} {}}

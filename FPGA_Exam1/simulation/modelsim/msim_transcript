@@ -1,0 +1,51 @@
+# Reading pref.tcl
+# do Exam1_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/Vela\ Projects/FPGA_Exam1 {C:/intelFPGA_lite/Vela Projects/FPGA_Exam1/add1bit.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:08:59 on Mar 28,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/Vela Projects/FPGA_Exam1" C:/intelFPGA_lite/Vela Projects/FPGA_Exam1/add1bit.v 
+# -- Compiling module add1bit
+# 
+# Top level modules:
+# 	add1bit
+# End time: 17:08:59 on Mar 28,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/Vela\ Projects/FPGA_Exam1 {C:/intelFPGA_lite/Vela Projects/FPGA_Exam1/test_add1bit.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:08:59 on Mar 28,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/Vela Projects/FPGA_Exam1" C:/intelFPGA_lite/Vela Projects/FPGA_Exam1/test_add1bit.v 
+# -- Compiling module test_add1bit
+# 
+# Top level modules:
+# 	test_add1bit
+# End time: 17:08:59 on Mar 28,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L maxv_ver -L rtl_work -L work -voptargs="+acc"  test_add1bit
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L maxv_ver -L rtl_work -L work -voptargs=""+acc"" test_add1bit 
+# Start time: 17:08:59 on Mar 28,2021
+# Loading work.test_add1bit
+# Loading work.add1bit
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Note: $stop    : C:/intelFPGA_lite/Vela Projects/FPGA_Exam1/test_add1bit.v(15)
+#    Time: 8 ns  Iteration: 0  Instance: /test_add1bit
+# Break in Module test_add1bit at C:/intelFPGA_lite/Vela Projects/FPGA_Exam1/test_add1bit.v line 15
+# End time: 17:11:20 on Mar 28,2021, Elapsed time: 0:02:21
+# Errors: 0, Warnings: 0
